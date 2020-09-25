@@ -4,41 +4,7 @@ html, body {
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: "Gotham Pro", sans-serif;
-  font-size: 18px;
-  line-height: 1.42;
-  color: #262626;
-  background-color: #fff; }
-
-.body__intro {
-  overflow: hidden; }
-
-.wrapper {
-  overflow: hidden;
-  min-width: 1200px;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column; }
-
-.wrapper__content {
-  flex-grow: 1; }
-
-.container {
-  width: 1160px;
-  margin: 0 auto; }
-
-.container--flex {
-  display: flex;
-  justify-content: flex-start; }
-
-.header__container, .footer__container {
-  align-items: center;
-  justify-content: space-between; }
-
-.discount__container {
-  align-items: center;
-  justify-content: center; }
+  -moz-osx-font-smoothing: grayscale; }
 
 *, ::before, ::after {
   box-sizing: border-box; }
