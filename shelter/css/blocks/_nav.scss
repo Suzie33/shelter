@@ -1,0 +1,25 @@
+.nav {
+  color: $color-dark-s;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--active {
+    border-bottom: 3px solid $color-primary;
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: .5;
+    transition: .3s;
+  }
+}

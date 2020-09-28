@@ -7,9 +7,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  font-family: Georgia, sans-serif;
+  font-family: Arial, sans-serif;
   font-weight: 400;
   font-size: 15px;
+  line-height: 1.6;
+  color: $color-dark-xl;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 *, ::before, ::after {
@@ -18,6 +29,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
