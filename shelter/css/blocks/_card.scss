@@ -1,0 +1,33 @@
+.card {
+  padding: 30px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-light-s;
+  border-radius: 9px;
+  transition: .2s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $color-light-xl;
+  }
+}
+
+.card__photo {
+  width: 200px;
+  height: 240px;
+  margin-bottom: 30px;
+}
+
+.card__title {
+  margin-bottom: 30px;
+
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #545454;
+  text-align: center;
+}

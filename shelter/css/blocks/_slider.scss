@@ -1,0 +1,18 @@
+.slider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider__list {
+  display: flex;
+}
+
+.slider__item {
+  margin-right: 90px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

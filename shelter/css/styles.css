@@ -346,6 +346,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: normal; }
 
 button {
+  padding: 0;
   border: none;
   background: transparent;
   cursor: pointer; }
@@ -388,6 +389,63 @@ table {
     cursor: pointer;
     background-color: #FDDCC4;
     transition: .3s; }
+  .btn--white {
+    padding: 14px 45px;
+    border: 2px solid #F1CDB3;
+    background-color: transparent; }
+
+.button-arrow__img {
+  fill: #292929; }
+
+.button-arrow {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .button-arrow:hover {
+    background-color: #FDDCC4;
+    border-color: #FDDCC4;
+    transition: .3s; }
+  .button-arrow--disabled {
+    border: 2px solid #CDCDCD;
+    background-color: transparent;
+    disabled: disabled; }
+    .button-arrow--disabled .button-arrow__img {
+      fill: #CDCDCD; }
+
+.button-arrow__img--right {
+  transform: rotate(180deg); }
+
+.card {
+  padding: 30px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FAFAFA;
+  border-radius: 9px;
+  transition: .2s; }
+  .card:hover {
+    cursor: pointer;
+    background-color: #FFFFFF; }
+
+.card__photo {
+  width: 200px;
+  height: 240px;
+  margin-bottom: 30px; }
+
+.card__title {
+  margin-bottom: 30px;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #545454;
+  text-align: center; }
 
 .header {
   padding-top: 60px;
@@ -458,8 +516,33 @@ table {
   letter-spacing: 0.06em;
   color: #F1CDB3; }
 
+.pets {
+  padding-top: 80px;
+  padding-bottom: 100px; }
+
+.pets__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.pets__slider {
+  margin-bottom: 60px; }
+
+.slider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.slider__list {
+  display: flex; }
+
+.slider__item {
+  margin-right: 90px; }
+  .slider__item:last-child {
+    margin-right: 0; }
+
 .title {
-  width: 370px;
   margin-bottom: 25px;
   font-family: Georgia;
   font-style: normal;
@@ -468,3 +551,9 @@ table {
   line-height: 130%;
   letter-spacing: 0.06em;
   color: #545454; }
+  .title--about {
+    width: 370px; }
+  .title--pets {
+    width: 400px;
+    margin-bottom: 60px;
+    text-align: center; }

@@ -1,5 +1,4 @@
 .title {
-  width: 370px;
   margin-bottom: 25px;
 
   font-family: Georgia;
@@ -9,4 +8,14 @@
   line-height: 130%;
   letter-spacing: 0.06em;
   color: $color-dark-l;
+
+  &--about {
+    width: 370px;
+  }
+
+  &--pets {
+    width: 400px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
 }

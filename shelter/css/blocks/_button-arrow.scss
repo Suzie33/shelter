@@ -1,0 +1,34 @@
+.button-arrow__img {
+  fill: #292929;
+}
+
+.button-arrow {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: $color-primary-light;
+    border-color: $color-primary-light;
+    transition: .3s;
+  }
+
+  &--disabled {
+    border: 2px solid #CDCDCD;
+    background-color: transparent;
+    disabled: disabled;
+
+    & .button-arrow__img {
+      fill: #CDCDCD;
+    }
+  }
+}
+
+.button-arrow__img--right {
+  transform: rotate(180deg);
+}
+

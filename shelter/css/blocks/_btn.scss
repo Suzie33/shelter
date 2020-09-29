@@ -15,4 +15,10 @@
     background-color: $color-primary-light;
     transition: .3s;
   }
+
+  &--white {
+    padding: 14px 45px;
+    border: 2px solid #F1CDB3;
+    background-color: transparent;
+  }
 }
