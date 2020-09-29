@@ -2,4 +2,35 @@
   min-height: 908px;
   background: url(../../assets/images/noise_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  color: $color-dark-s;
+}
+
+.hero__content {
+  display: flex;
+  align-items: center;
+}
+
+.hero__right {
+  width: 58%;
+}
+
+.hero__left {
+  width: 38.5%;
+  margin-right: 3.5%;
+  margin-bottom: 80px;
+}
+
+.hero__title {
+  width: 310px;
+  margin-bottom: 42px;
+
+  font-family: Georgia;
+  font-size: 44px;
+  line-height: 130%;
+  color: $color-light-xl;
+}
+
+.hero__desc {
+  margin-bottom: 41px;
 }

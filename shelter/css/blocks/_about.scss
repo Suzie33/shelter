@@ -1,0 +1,27 @@
+.about {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.about__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__photo {
+  width: 300px;
+  margin-right: 120px;
+}
+
+.about__content {
+  width: 430px;
+}
+
+.about__text {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

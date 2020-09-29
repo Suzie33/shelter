@@ -1,0 +1,18 @@
+.btn {
+  display: inline-flex;
+  padding: 15px 45px;
+  background-color:$color-primary;
+  border-radius: 100px;
+
+  font-family: Georgia;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: $color-dark-xl;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $color-primary-light;
+    transition: .3s;
+  }
+}
