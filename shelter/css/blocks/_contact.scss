@@ -1,0 +1,23 @@
+.contact__link {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    opacity: .5;
+    transition: .3s;
+  }
+}
+
+.contact__icon {
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.contact__text {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+}

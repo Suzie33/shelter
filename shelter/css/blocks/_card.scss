@@ -1,5 +1,5 @@
 .card {
-  padding: 30px 35px;
+  // padding: 30px 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,9 +15,13 @@
 }
 
 .card__photo {
-  width: 200px;
-  height: 240px;
+  width: 270px;
+  height: 270px;
   margin-bottom: 30px;
+}
+
+.card__content {
+  padding: 0px 30px 30px;
 }
 
 .card__title {

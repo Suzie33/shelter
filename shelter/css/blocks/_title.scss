@@ -20,7 +20,7 @@
   }
 
   &--help {
-    width: 308px;
+    width: 310px;
     margin-bottom: 60px;
     text-align: center;
   }
@@ -28,5 +28,10 @@
   &--donate {
     width: 300px;
     margin-bottom: 20px;
+  }
+
+  &--footer {
+    margin-bottom: 0;
+    color: $color-light-xl;
   }
 }

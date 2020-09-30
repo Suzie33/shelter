@@ -321,7 +321,8 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1200px; }
+  width: 1280px;
+  padding: 0 40px; }
 
 *, ::before, ::after {
   box-sizing: border-box; }
@@ -393,7 +394,7 @@ svg {
     background-color: #FDDCC4;
     transition: .3s; }
   .btn--white {
-    padding: 14px 45px;
+    padding: 13px 43px;
     border: 2px solid #F1CDB3;
     background-color: transparent; }
 
@@ -423,7 +424,6 @@ svg {
   transform: rotate(180deg); }
 
 .card {
-  padding: 30px 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -436,9 +436,12 @@ svg {
     box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04); }
 
 .card__photo {
-  width: 200px;
-  height: 240px;
+  width: 270px;
+  height: 270px;
   margin-bottom: 30px; }
+
+.card__content {
+  padding: 0px 30px 30px; }
 
 .card__title, .help__title {
   margin-bottom: 30px;
@@ -450,6 +453,25 @@ svg {
   letter-spacing: 0.06em;
   color: #545454;
   text-align: center; }
+
+.contact__link {
+  display: flex;
+  align-items: center; }
+  .contact__link:hover {
+    opacity: .5;
+    transition: .3s; }
+
+.contact__icon {
+  margin-right: 20px;
+  flex-shrink: 0; }
+
+.contact__text {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em; }
 
 .credit-card {
   display: inline-flex;
@@ -473,7 +495,7 @@ svg {
   margin-right: 15px; }
 
 .donate {
-  padding-top: 80px;
+  padding-top: 82px;
   padding-bottom: 100px;
   background-color: #F6F6F6; }
 
@@ -508,6 +530,37 @@ svg {
   font-style: italic;
   color: #B2B2B2; }
 
+.footer {
+  min-height: 350px;
+  background: url(../../assets/images/noise_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  color: #F1CDB3;
+  height: 1px; }
+
+.footer__container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between; }
+
+.footer__left {
+  padding-top: 56px; }
+
+.footer__right {
+  align-self: flex-end; }
+
+.footer__row {
+  margin-bottom: 34px;
+  display: flex;
+  align-items: center; }
+  .footer__row:last-child {
+    margin-bottom: 0; }
+
+.footer__left-col {
+  width: 279px;
+  margin-right: 160px; }
+
+.footer__right-col {
+  width: 302px; }
+
 .header {
   padding-top: 60px;
   margin-bottom: 60px;
@@ -529,12 +582,12 @@ svg {
   width: 308px; }
 
 .help__list {
-  width: 85.5%;
+  width: 86%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   row-gap: 55px;
-  column-gap: 119px; }
+  column-gap: 120px; }
 
 .help__img {
   height: 60px;
@@ -580,11 +633,12 @@ svg {
   color: #FFFFFF; }
 
 .hero__desc {
-  margin-bottom: 41px; }
+  margin-bottom: 40px; }
 
 .logo__text {
   font-size: 13px;
   line-height: 15px;
+  text-align: right;
   letter-spacing: 0.1em;
   color: #FFFFFF; }
 
@@ -606,6 +660,7 @@ svg {
     transition: .3s; }
 
 .page-title {
+  margin-bottom: 10px;
   font-family: Georgia;
   font-style: normal;
   font-weight: normal;
@@ -657,9 +712,12 @@ svg {
     margin-bottom: 60px;
     text-align: center; }
   .title--help {
-    width: 308px;
+    width: 310px;
     margin-bottom: 60px;
     text-align: center; }
   .title--donate {
     width: 300px;
     margin-bottom: 20px; }
+  .title--footer {
+    margin-bottom: 0;
+    color: #FFFFFF; }
