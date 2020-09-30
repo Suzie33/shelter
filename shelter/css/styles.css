@@ -436,7 +436,7 @@ table {
   height: 240px;
   margin-bottom: 30px; }
 
-.card__title {
+.card__title, .help__title {
   margin-bottom: 30px;
   font-family: Georgia;
   font-style: normal;
@@ -454,6 +454,37 @@ table {
   justify-content: space-between;
   align-items: center;
   color: #F6F6F6; }
+
+.help {
+  padding-top: 80px;
+  padding-bottom: 100px; }
+
+.help__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.help__top {
+  width: 308px; }
+
+.help__list {
+  width: 85.5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 55px;
+  column-gap: 119px; }
+
+.help__img {
+  height: 60px;
+  margin-bottom: 30px; }
+
+.help__icon {
+  display: block;
+  margin: 0 auto; }
+
+.help__title {
+  margin-bottom: 0; }
 
 .hero {
   min-height: 908px;
@@ -518,7 +549,8 @@ table {
 
 .pets {
   padding-top: 80px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  background-color: #F6F6F6; }
 
 .pets__container {
   display: flex;
@@ -555,5 +587,9 @@ table {
     width: 370px; }
   .title--pets {
     width: 400px;
+    margin-bottom: 60px;
+    text-align: center; }
+  .title--help {
+    width: 308px;
     margin-bottom: 60px;
     text-align: center; }
