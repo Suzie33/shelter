@@ -1,0 +1,25 @@
+.credit-card {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: $color-primary;
+  border-radius: 9px;
+}
+
+.credit-card__number {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: $color-dark-l;
+
+  &:hover {
+    color: $color-dark-3xl;
+  }
+}
+
+.credit-card__img {
+  margin-right: 15px;
+}

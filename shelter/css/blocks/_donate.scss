@@ -1,0 +1,43 @@
+.donate {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background-color: $color-light-l;
+}
+
+.donate__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donate__photo {
+  width: 42,1%;
+  margin-right: 2.5%;
+}
+
+.donate__content {
+  width: 31.67%;
+}
+
+.donate__subtitle {
+  margin-bottom: 20px;
+
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: $color-dark-l;
+}
+
+.donate__card {
+  margin-bottom: 20px;
+}
+
+.donate__info {
+  font-size: 12px;
+  line-height: 1.5;
+  font-style: italic;
+  color: $color-dark-m;
+}

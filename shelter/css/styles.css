@@ -354,6 +354,9 @@ button {
 table {
   border-collapse: collapse; }
 
+svg {
+  display: block; }
+
 .about {
   padding-top: 80px;
   padding-bottom: 100px; }
@@ -429,7 +432,8 @@ table {
   transition: .2s; }
   .card:hover {
     cursor: pointer;
-    background-color: #FFFFFF; }
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04); }
 
 .card__photo {
   width: 200px;
@@ -446,6 +450,63 @@ table {
   letter-spacing: 0.06em;
   color: #545454;
   text-align: center; }
+
+.credit-card {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #F1CDB3;
+  border-radius: 9px; }
+
+.credit-card__number {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454; }
+  .credit-card__number:hover {
+    color: #292929; }
+
+.credit-card__img {
+  margin-right: 15px; }
+
+.donate {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background-color: #F6F6F6; }
+
+.donate__container {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.donate__photo {
+  width: 42,1%;
+  margin-right: 2.5%; }
+
+.donate__content {
+  width: 31.67%; }
+
+.donate__subtitle {
+  margin-bottom: 20px;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #545454; }
+
+.donate__card {
+  margin-bottom: 20px; }
+
+.donate__info {
+  font-size: 12px;
+  line-height: 1.5;
+  font-style: italic;
+  color: #B2B2B2; }
 
 .header {
   padding-top: 60px;
@@ -489,8 +550,14 @@ table {
 .hero {
   min-height: 908px;
   background: url(../../assets/images/noise_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #CDCDCD; }
+  color: #CDCDCD;
+  height: 1px; }
+
+.hero__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 .hero__content {
   display: flex;
@@ -535,7 +602,7 @@ table {
     border-bottom: 3px solid #F1CDB3; }
   .nav__item:hover {
     cursor: pointer;
-    opacity: .5;
+    color: #FAFAFA;
     transition: .3s; }
 
 .page-title {
@@ -593,3 +660,6 @@ table {
     width: 308px;
     margin-bottom: 60px;
     text-align: center; }
+  .title--donate {
+    width: 300px;
+    margin-bottom: 20px; }
