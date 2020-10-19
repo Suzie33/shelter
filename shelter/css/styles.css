@@ -327,8 +327,8 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1280px;
-  padding: 0 40px; }
+  max-width: 1200px;
+  width: 93.75%; }
 
 .main {
   padding-top: 120px; }
@@ -505,7 +505,7 @@ svg {
 
 .donate {
   padding-top: 82px;
-  padding-bottom: 100px;
+  padding-bottom: 105px;
   background-color: #F6F6F6; }
 
 .donate__container {
@@ -621,6 +621,8 @@ svg {
   margin-bottom: 0; }
 
 .hero {
+  display: flex;
+  flex-direction: column;
   min-height: 908px;
   background: url(../../assets/images/noise_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
   color: #CDCDCD;
@@ -631,7 +633,8 @@ svg {
   align-items: center; }
 
 .hero__right {
-  width: 58%; }
+  width: 58%;
+  align-self: flex-end; }
 
 .hero__left {
   width: 38.5%;
