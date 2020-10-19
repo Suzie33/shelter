@@ -9,8 +9,14 @@
   display: flex;
 }
 
+.slider__list-wrap {
+  flex-grow: 1;
+  padding: 0 53px;
+}
+
 .slider__item {
-  margin-right: 90px;
+  margin-right: 9.09%;
+  flex-shrink: 0;
 
   &:last-child {
     margin-right: 0;

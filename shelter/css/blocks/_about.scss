@@ -7,15 +7,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include tablets {
+    flex-direction: column;
+  }
 }
 
 .about__photo {
   width: 300px;
   margin-right: 120px;
+
+  @include tablets {
+    margin-right: 0;
+  }
 }
 
 .about__content {
   width: 430px;
+
+  @include tablets {
+    order: -1;
+    margin-bottom: 80px;
+  }
 }
 
 .about__text {

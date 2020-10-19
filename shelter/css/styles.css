@@ -378,13 +378,23 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    .about__container {
+      flex-direction: column; } }
 
 .about__photo {
   width: 300px;
   margin-right: 120px; }
+  @media screen and (max-width: 768px) {
+    .about__photo {
+      margin-right: 0; } }
 
 .about__content {
   width: 430px; }
+  @media screen and (max-width: 768px) {
+    .about__content {
+      order: -1;
+      margin-bottom: 80px; } }
 
 .about__text {
   margin-bottom: 25px; }
@@ -777,8 +787,13 @@ svg {
 .slider__list {
   display: flex; }
 
+.slider__list-wrap {
+  flex-grow: 1;
+  padding: 0 53px; }
+
 .slider__item {
-  margin-right: 90px; }
+  margin-right: 9.09%;
+  flex-shrink: 0; }
   .slider__item:last-child {
     margin-right: 0; }
 
