@@ -13,3 +13,12 @@
 .pets__slider {
   margin-bottom: 60px;
 }
+
+.pets__list {
+  margin-bottom: 60px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 30px;
+}

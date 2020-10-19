@@ -1,0 +1,45 @@
+.pagination {
+  display: flex;
+  column-gap: 20px;
+}
+
+.pagination__btn {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #F1CDB3;
+  border-radius: 50%;
+  color: $color-dark-3xl;
+
+  &:hover {
+    background-color: $color-primary-light;
+    border-color: $color-primary-light;
+  }
+
+  &--disabled {
+    border-color: $color-dark-s;
+    color: $color-dark-s;
+    cursor: default;
+  }
+
+  &[disabled]:hover {
+    border-color: $color-dark-s;
+    color: $color-dark-s;
+    background-color: transparent;
+    cursor: default;
+  }
+
+  &--active {
+    background-color: $color-primary;
+  }
+}
+
+.pagination__symbol {
+  display: inline-flex;
+  font-family: Georgia;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.06em;
+}

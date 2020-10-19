@@ -1,9 +1,27 @@
 .header {
+  width: 100%;
   padding-top: 60px;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
+  
+  color: $color-light-l;
+
+  &--thin {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &--white {
+    background-color: $color-light-xl;
+  }
+
+  &--fixed {
+    position: fixed;
+    top: 0;
+  }
+}
+
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  color: $color-light-l;
 }

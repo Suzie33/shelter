@@ -1,5 +1,13 @@
 .nav {
   color: $color-dark-s;
+
+  &--dark {
+    color: $color-dark-l;
+
+    & .nav__item:hover {
+      color: $color-dark-3xl;
+    }
+  }
 }
 
 .nav__list {

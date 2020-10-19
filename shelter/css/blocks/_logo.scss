@@ -1,7 +1,15 @@
+.logo {
+  flex-grow: 0;
+}
+
 .logo__text {
   font-size: 13px;
   line-height: 15px;
   text-align: right;
   letter-spacing: 0.1em;
   color: $color-light-xl;
+
+  &--dark {
+    color: $color-dark-3xl;
+  }
 }
