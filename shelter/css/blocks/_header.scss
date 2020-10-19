@@ -1,7 +1,6 @@
 .header {
   width: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
   
   color: $color-light-l;
 
@@ -17,6 +16,10 @@
   &--fixed {
     position: fixed;
     top: 0;
+  }
+
+  @include tablets {
+    padding-top: 30px;
   }
 }
 

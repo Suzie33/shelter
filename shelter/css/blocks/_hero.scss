@@ -5,23 +5,36 @@
   background: url(../../assets/images/noise_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 
   color: $color-dark-s;
-  height: 1px;
 }
 
 .hero__container {
   display: flex;
   align-items: center;
+
+  @include tablets {
+    flex-direction: column;
+  }
 }
 
 .hero__right {
   width: 58%;
   align-self: flex-end;
+
+  @include tablets {
+    width: 80.4%;
+  }
 }
 
 .hero__left {
   width: 38.5%;
   margin-right: 3.5%;
   margin-bottom: 80px;
+
+  @include tablets {
+    width: 65%;
+    margin-right: 0;
+    margin-bottom: 100px;
+  }
 }
 
 .hero__title {
@@ -35,5 +48,5 @@
 }
 
 .hero__desc {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }

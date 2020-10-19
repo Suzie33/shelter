@@ -13,8 +13,8 @@ $color-primary-light: #FDDCC4;
 
 // setups
 @import 'base/normalize.scss';
-@import 'base/base.scss';
 @import 'base/media.scss';
+@import 'base/base.scss';
 
 //blocks
 @import 'blocks/*.scss';

@@ -329,6 +329,9 @@ body {
   margin: 0 auto;
   max-width: 1200px;
   width: 93.75%; }
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 92.1875%; } }
 
 .main {
   padding-top: 120px; }
@@ -572,8 +575,7 @@ svg {
 
 .header {
   width: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
   color: #F6F6F6; }
   .header--thin {
     padding-top: 30px;
@@ -583,6 +585,9 @@ svg {
   .header--fixed {
     position: fixed;
     top: 0; }
+  @media screen and (max-width: 768px) {
+    .header {
+      padding-top: 30px; } }
 
 .header__container {
   display: flex;
@@ -625,21 +630,31 @@ svg {
   flex-direction: column;
   min-height: 908px;
   background: url(../../assets/images/noise_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
-  color: #CDCDCD;
-  height: 1px; }
+  color: #CDCDCD; }
 
 .hero__container {
   display: flex;
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    .hero__container {
+      flex-direction: column; } }
 
 .hero__right {
   width: 58%;
   align-self: flex-end; }
+  @media screen and (max-width: 768px) {
+    .hero__right {
+      width: 80.4%; } }
 
 .hero__left {
   width: 38.5%;
   margin-right: 3.5%;
   margin-bottom: 80px; }
+  @media screen and (max-width: 768px) {
+    .hero__left {
+      width: 65%;
+      margin-right: 0;
+      margin-bottom: 100px; } }
 
 .hero__title {
   width: 310px;
@@ -650,7 +665,7 @@ svg {
   color: #FFFFFF; }
 
 .hero__desc {
-  margin-bottom: 40px; }
+  margin-bottom: 42px; }
 
 .logo {
   flex-grow: 0; }

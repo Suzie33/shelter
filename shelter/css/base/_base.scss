@@ -29,6 +29,10 @@ body {
   margin: 0 auto;
   max-width: 1200px;
   width: 93.75%;
+
+  @include tablets {
+    width: 92.1875%;
+  }
 }
 
 .main {
