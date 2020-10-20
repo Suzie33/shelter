@@ -2,6 +2,10 @@
   padding-top: 82px;
   padding-bottom: 105px;
   background-color: $color-light-l;
+
+  @include phones {
+    padding: 42px 0;
+  }
 }
 
 .donate__container {
@@ -22,6 +26,10 @@
     width: 71.3%;
     margin-right: 0;
   }
+
+  @include phones {
+    width: 87%;
+  }
 }
 
 .donate__content {
@@ -30,6 +38,11 @@
   @include tablets {
     order: -1;
     margin-bottom: 60px;
+  }
+
+  @include phones {
+    width: 93.34%;
+    margin-bottom: 42px;
   }
 }
 
@@ -43,6 +56,13 @@
   line-height: 110%;
   letter-spacing: 0.06em;
   color: $color-dark-l;
+
+  @include phones {
+    font-family: Arial;
+    line-height: 160%;
+    letter-spacing: normal;
+    text-align: center;
+  }
 }
 
 .donate__card {
@@ -54,4 +74,8 @@
   line-height: 1.5;
   font-style: italic;
   color: $color-dark-m;
+
+  @include phones {
+    text-align: justify;
+  }
 }

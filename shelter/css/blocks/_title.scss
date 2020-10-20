@@ -42,6 +42,10 @@
   &--donate {
     width: 300px;
     margin-bottom: 20px;
+
+    @include phones {
+      width: 75%;
+    }
   }
 
   &--footer {

@@ -19,6 +19,11 @@
   &:hover {
     color: $color-dark-3xl;
   }
+
+  @include phones {
+    font-size: 15px;
+    line-height: 17px;
+  }
 }
 
 .credit-card__img {

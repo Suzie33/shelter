@@ -534,6 +534,10 @@ svg {
   white-space: nowrap; }
   .credit-card__number:hover {
     color: #292929; }
+  @media screen and (max-width: 480px) {
+    .credit-card__number {
+      font-size: 15px;
+      line-height: 17px; } }
 
 .credit-card__img {
   margin-right: 15px; }
@@ -542,6 +546,9 @@ svg {
   padding-top: 82px;
   padding-bottom: 105px;
   background-color: #F6F6F6; }
+  @media screen and (max-width: 480px) {
+    .donate {
+      padding: 42px 0; } }
 
 .donate__container {
   display: flex;
@@ -558,6 +565,9 @@ svg {
     .donate__photo {
       width: 71.3%;
       margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .donate__photo {
+      width: 87%; } }
 
 .donate__content {
   width: 380px; }
@@ -565,6 +575,10 @@ svg {
     .donate__content {
       order: -1;
       margin-bottom: 60px; } }
+  @media screen and (max-width: 480px) {
+    .donate__content {
+      width: 93.34%;
+      margin-bottom: 42px; } }
 
 .donate__subtitle {
   margin-bottom: 20px;
@@ -575,6 +589,12 @@ svg {
   line-height: 110%;
   letter-spacing: 0.06em;
   color: #545454; }
+  @media screen and (max-width: 480px) {
+    .donate__subtitle {
+      font-family: Arial;
+      line-height: 160%;
+      letter-spacing: normal;
+      text-align: center; } }
 
 .donate__card {
   margin-bottom: 20px; }
@@ -584,6 +604,9 @@ svg {
   line-height: 1.5;
   font-style: italic;
   color: #B2B2B2; }
+  @media screen and (max-width: 480px) {
+    .donate__info {
+      text-align: justify; } }
 
 .footer {
   padding-top: 40px;
@@ -995,6 +1018,9 @@ svg {
   .title--donate {
     width: 300px;
     margin-bottom: 20px; }
+    @media screen and (max-width: 480px) {
+      .title--donate {
+        width: 75%; } }
   .title--footer {
     margin-bottom: 0;
     color: #FFFFFF; }
