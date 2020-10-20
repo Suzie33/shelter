@@ -51,6 +51,10 @@
   &--footer {
     margin-bottom: 0;
     color: $color-light-xl;
+
+    @include phones {
+      width: 235px;
+    }
   }
 
   @include phones {

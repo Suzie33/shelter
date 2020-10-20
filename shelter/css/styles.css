@@ -638,6 +638,10 @@ svg {
       margin-bottom: 65px;
       width: 100%;
       justify-content: space-around; } }
+  @media screen and (max-width: 480px) {
+    .footer__content {
+      flex-wrap: wrap;
+      margin-bottom: 40px; } }
 
 .footer__image-wrap {
   align-self: flex-end;
@@ -646,6 +650,9 @@ svg {
     .footer__image-wrap {
       align-self: center;
       width: 42.37%; } }
+  @media screen and (max-width: 480px) {
+    .footer__image-wrap {
+      width: 86.66%; } }
 
 .footer__contact,
 .footer__address {
@@ -661,9 +668,17 @@ svg {
   @media screen and (max-width: 768px) {
     .footer__contact {
       margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .footer__contact {
+      margin-bottom: 40px;
+      min-height: 208px;
+      align-items: center; } }
 
 .footer__address {
-  width: 302px; }
+  width: 300px; }
+  @media screen and (max-width: 480px) {
+    .footer__address {
+      min-height: 222px; } }
 
 .hamburger-menu-link {
   display: none; }
@@ -1024,6 +1039,9 @@ svg {
   .title--footer {
     margin-bottom: 0;
     color: #FFFFFF; }
+    @media screen and (max-width: 480px) {
+      .title--footer {
+        width: 235px; } }
   @media screen and (max-width: 480px) {
     .title {
       font-size: 25px;

@@ -6,7 +6,6 @@
   @include tablets {
     padding-top: 30px;
   }
-
 }
 
 .footer__container {
@@ -22,7 +21,6 @@
 .footer__content {
   padding-top: 16px;
   padding-bottom: 61px;
-
   width: 61.67%;
 
   display: flex;
@@ -36,6 +34,11 @@
     width: 100%;
     justify-content: space-around;
   }
+
+  @include phones {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
 }
 
 .footer__image-wrap {
@@ -45,6 +48,10 @@
   @include tablets {
     align-self: center;
     width: 42.37%;
+  }
+
+  @include phones {
+    width: 86.66%;
   }
 }
 
@@ -64,10 +71,19 @@
   @include tablets {
     margin-right: 0;
   }
+
+  @include phones {
+    margin-bottom: 40px;
+    min-height: 208px;
+    align-items: center;
+  }
 }
 
 .footer__address {
-  width: 302px;
+  width: 300px;
 
+  @include phones {
+    min-height: 222px;
 
+  }
 }
