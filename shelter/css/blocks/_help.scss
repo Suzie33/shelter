@@ -1,16 +1,16 @@
 .help {
   padding-top: 80px;
   padding-bottom: 100px;
+
+  @include phones {
+    padding: 42px 0;
+  }
 }
 
 .help__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.help__top {
-  width: 308px;
 }
 
 .help__list {
@@ -25,25 +25,51 @@
     width: 89%;
     column-gap: 60px;
   }
+
+  @include phones {
+    width: 96.67%;
+    row-gap: 30px;
+    column-gap: 30px;
+    justify-content: start;
+  }
 }
 
 .help__item {
   @include tablets {
     min-width: 170px;
   }
+
+  @include phones {
+    min-width: 130px;
+  }
 }
 
 .help__img {
   height: 60px;
   margin-bottom: 30px;
+
+  @include phones {
+    height: 50px;
+    margin-bottom: 20px;
+  }
 }
 
 .help__icon {
+  height: 60px;
   display: block;
   margin: 0 auto;
+
+  @include phones {
+    height: 50px;
+  }
 }
 
 .help__title {
   @extend .card__title;
   margin-bottom: 0;
+
+  @include phones {
+    font-size: 15px;
+    line-height: 17px;
+  }
 }

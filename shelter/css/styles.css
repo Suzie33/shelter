@@ -676,14 +676,14 @@ svg {
 .help {
   padding-top: 80px;
   padding-bottom: 100px; }
+  @media screen and (max-width: 480px) {
+    .help {
+      padding: 42px 0; } }
 
 .help__container {
   display: flex;
   flex-direction: column;
   align-items: center; }
-
-.help__top {
-  width: 308px; }
 
 .help__list {
   width: 86%;
@@ -696,21 +696,43 @@ svg {
     .help__list {
       width: 89%;
       column-gap: 60px; } }
+  @media screen and (max-width: 480px) {
+    .help__list {
+      width: 96.67%;
+      row-gap: 30px;
+      column-gap: 30px;
+      justify-content: start; } }
 
 @media screen and (max-width: 768px) {
   .help__item {
     min-width: 170px; } }
 
+@media screen and (max-width: 480px) {
+  .help__item {
+    min-width: 130px; } }
+
 .help__img {
   height: 60px;
   margin-bottom: 30px; }
+  @media screen and (max-width: 480px) {
+    .help__img {
+      height: 50px;
+      margin-bottom: 20px; } }
 
 .help__icon {
+  height: 60px;
   display: block;
   margin: 0 auto; }
+  @media screen and (max-width: 480px) {
+    .help__icon {
+      height: 50px; } }
 
 .help__title {
   margin-bottom: 0; }
+  @media screen and (max-width: 480px) {
+    .help__title {
+      font-size: 15px;
+      line-height: 17px; } }
 
 .hero {
   display: flex;
@@ -966,6 +988,10 @@ svg {
     width: 310px;
     margin-bottom: 60px;
     text-align: center; }
+    @media screen and (max-width: 480px) {
+      .title--help {
+        width: 75%;
+        margin-bottom: 42px; } }
   .title--donate {
     width: 300px;
     margin-bottom: 20px; }
