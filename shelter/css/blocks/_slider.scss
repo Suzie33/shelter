@@ -7,18 +7,28 @@
 
 .slider__list {
   display: flex;
+  column-gap: 9.09%;
+
+  @include tablets {
+    column-gap: 7%;
+  }
 }
 
 .slider__list-wrap {
-  flex-grow: 1;
-  padding: 0 53px;
+  width: 82.5%;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @include tablets {
+    width: 82%;
+  }
 }
 
 .slider__item {
-  margin-right: 9.09%;
+  width: 27.27%;
   flex-shrink: 0;
 
-  &:last-child {
-    margin-right: 0;
+  @include tablets {
+    width: 46.5%;
   }
 }

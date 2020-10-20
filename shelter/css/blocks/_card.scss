@@ -14,8 +14,9 @@
 }
 
 .card__photo {
-  width: 270px;
-  height: 270px;
+  width: 100%;
+  max-width: 270px;
+  height: auto;
   margin-bottom: 30px;
 }
 
