@@ -18,21 +18,27 @@
     border-color: $color-primary-light;
   }
 
-  &--disabled {
+  &[disabled] {
     border-color: $color-dark-s;
     color: $color-dark-s;
     cursor: default;
-  }
 
-  &[disabled]:hover {
-    border-color: $color-dark-s;
-    color: $color-dark-s;
-    background-color: transparent;
-    cursor: default;
+    &:hover {
+      border-color: $color-dark-s;
+      color: $color-dark-s;
+      background-color: transparent;
+      cursor: default;
+    }
   }
 
   &--active {
     background-color: $color-primary;
+
+    &:hover {
+      background-color: $color-primary;
+      border-color: $color-primary;
+      cursor: default;
+    }
   }
 }
 
@@ -41,5 +47,4 @@
   font-family: Georgia;
   font-size: 20px;
   line-height: 1;
-  letter-spacing: 0.06em;
 }

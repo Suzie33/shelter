@@ -427,13 +427,15 @@ svg {
   font-size: 17px;
   line-height: 130%;
   letter-spacing: 0.06em;
-  color: #4C4C4C; }
+  color: #4C4C4C;
+  white-space: nowrap; }
   .btn:hover {
     cursor: pointer;
     background-color: #FDDCC4;
+    border-color: #FDDCC4;
     transition: .3s; }
   .btn--white {
-    padding: 13px 43px;
+    padding: 14px 43px;
     border: 2px solid #F1CDB3;
     background-color: transparent; }
   @media screen and (max-width: 480px) {
@@ -457,8 +459,7 @@ svg {
     transition: .3s; }
   .button-arrow--disabled {
     border: 2px solid #CDCDCD;
-    background-color: transparent;
-    disabled: disabled; }
+    background-color: transparent; }
     .button-arrow--disabled .button-arrow__img {
       fill: #CDCDCD; }
 
@@ -690,6 +691,7 @@ svg {
 .header {
   width: 100%;
   padding: 60px 0;
+  margin-bottom: auto;
   color: #F6F6F6; }
   .header--thin {
     padding-top: 30px;
@@ -900,24 +902,27 @@ svg {
   .pagination__btn:hover {
     background-color: #FDDCC4;
     border-color: #FDDCC4; }
-  .pagination__btn--disabled {
+  .pagination__btn[disabled] {
     border-color: #CDCDCD;
     color: #CDCDCD;
     cursor: default; }
-  .pagination__btn[disabled]:hover {
-    border-color: #CDCDCD;
-    color: #CDCDCD;
-    background-color: transparent;
-    cursor: default; }
+    .pagination__btn[disabled]:hover {
+      border-color: #CDCDCD;
+      color: #CDCDCD;
+      background-color: transparent;
+      cursor: default; }
   .pagination__btn--active {
     background-color: #F1CDB3; }
+    .pagination__btn--active:hover {
+      background-color: #F1CDB3;
+      border-color: #F1CDB3;
+      cursor: default; }
 
 .pagination__symbol {
   display: inline-flex;
   font-family: Georgia;
   font-size: 20px;
-  line-height: 1;
-  letter-spacing: 0.06em; }
+  line-height: 1; }
 
 .pets {
   padding-top: 80px;

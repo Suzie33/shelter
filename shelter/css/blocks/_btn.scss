@@ -9,15 +9,17 @@
   line-height: 130%;
   letter-spacing: 0.06em;
   color: $color-dark-xl;
+  white-space: nowrap;
 
   &:hover {
     cursor: pointer;
     background-color: $color-primary-light;
+    border-color: $color-primary-light;
     transition: .3s;
   }
 
   &--white {
-    padding: 13px 43px;
+    padding: 14px 43px;
     border: 2px solid #F1CDB3;
     background-color: transparent;
   }
