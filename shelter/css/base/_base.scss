@@ -33,6 +33,10 @@ body {
   @include tablets {
     width: 92.1875%;
   }
+
+  @include phones {
+    width: 93.75%;
+  }
 }
 
 .main {

@@ -332,6 +332,9 @@ body {
   @media screen and (max-width: 768px) {
     .container {
       width: 92.1875%; } }
+  @media screen and (max-width: 480px) {
+    .container {
+      width: 93.75%; } }
 
 .main {
   padding-top: 120px; }
@@ -419,6 +422,9 @@ svg {
     padding: 13px 43px;
     border: 2px solid #F1CDB3;
     background-color: transparent; }
+  @media screen and (max-width: 480px) {
+    .btn {
+      color: #292929; } }
 
 .button-arrow__img {
   fill: #292929; }
@@ -622,6 +628,13 @@ svg {
 .footer__address {
   width: 302px; }
 
+.hamburger-menu-link {
+  display: none; }
+  @media screen and (max-width: 480px) {
+    .hamburger-menu-link {
+      display: block;
+      margin-right: 43px; } }
+
 .header {
   width: 100%;
   padding: 60px 0;
@@ -637,6 +650,9 @@ svg {
   @media screen and (max-width: 768px) {
     .header {
       padding-top: 30px; } }
+
+.header__left {
+  flex-shrink: 0; }
 
 .header__container {
   display: flex;
@@ -688,6 +704,9 @@ svg {
   min-height: 908px;
   background: url(../../assets/images/noise_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
   color: #CDCDCD; }
+  @media screen and (max-width: 480px) {
+    .hero {
+      min-height: 568px; } }
 
 .hero__container {
   display: flex;
@@ -702,6 +721,9 @@ svg {
   @media screen and (max-width: 768px) {
     .hero__right {
       width: 80.4%; } }
+  @media screen and (max-width: 480px) {
+    .hero__right {
+      width: 86.67%; } }
 
 .hero__left {
   width: 38.5%;
@@ -712,6 +734,13 @@ svg {
       width: 65%;
       margin-right: 0;
       margin-bottom: 100px; } }
+  @media screen and (max-width: 480px) {
+    .hero__left {
+      width: 100%;
+      margin-bottom: 105px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
 
 .hero__title {
   width: 310px;
@@ -720,9 +749,18 @@ svg {
   font-size: 44px;
   line-height: 130%;
   color: #FFFFFF; }
+  @media screen and (max-width: 480px) {
+    .hero__title {
+      width: 205px;
+      font-size: 25px;
+      letter-spacing: 0.06em;
+      text-align: center; } }
 
 .hero__desc {
   margin-bottom: 42px; }
+  @media screen and (max-width: 480px) {
+    .hero__desc {
+      text-align: center; } }
 
 .logo {
   flex-grow: 0; }
@@ -742,6 +780,9 @@ svg {
     color: #545454; }
     .nav--dark .nav__item:hover {
       color: #292929; }
+  @media screen and (max-width: 480px) {
+    .nav {
+      display: none; } }
 
 .nav__list {
   display: flex; }

@@ -8,6 +8,10 @@
       color: $color-dark-3xl;
     }
   }
+
+  @include phones {
+    display: none;
+  }
 }
 
 .nav__list {

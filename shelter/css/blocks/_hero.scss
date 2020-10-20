@@ -5,6 +5,10 @@
   background: url(../../assets/images/noise_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 
   color: $color-dark-s;
+
+  @include phones {
+    min-height: 568px;
+  }
 }
 
 .hero__container {
@@ -20,8 +24,12 @@
   width: 58%;
   align-self: flex-end;
 
-  @include tablets {
+  @include tablets { 
     width: 80.4%;
+  }
+
+  @include phones {
+    width: 86.67%;
   }
 }
 
@@ -35,6 +43,14 @@
     margin-right: 0;
     margin-bottom: 100px;
   }
+
+  @include phones {
+    width: 100%;
+    margin-bottom: 105px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .hero__title {
@@ -45,8 +61,19 @@
   font-size: 44px;
   line-height: 130%;
   color: $color-light-xl;
+
+  @include phones {
+    width: 205px;
+    font-size: 25px;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
 }
 
 .hero__desc {
   margin-bottom: 42px;
+
+  @include phones {
+    text-align: center;
+  }
 }
