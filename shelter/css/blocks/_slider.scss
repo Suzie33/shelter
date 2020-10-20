@@ -3,6 +3,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include phones {
+    width: 90%;
+    flex-wrap: wrap;
+  }
 }
 
 .slider__list {
@@ -11,6 +16,12 @@
 
   @include tablets {
     column-gap: 7%;
+  }
+
+  @include phones {
+    max-width: 270px;
+    overflow: hidden;
+    margin: 0 auto;
   }
 }
 
@@ -22,13 +33,38 @@
   @include tablets {
     width: 82%;
   }
+
+  @include phones {
+    width: 100%;
+    margin-bottom: 20px;
+    order: -1;
+  }
 }
 
 .slider__item {
   width: 27.27%;
+  max-width: 270px;
   flex-shrink: 0;
 
   @include tablets {
     width: 46.5%;
+  }
+
+  @include phones {
+    width: 100%;
+  }
+}
+
+.slider__controls {
+  &--left {
+    @include phones {
+      margin-left: 43px;
+    }
+  }
+
+  &--right {
+    @include phones {
+      margin-right: 43px;
+    }
   }
 }

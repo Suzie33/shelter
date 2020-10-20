@@ -2,6 +2,10 @@
   padding-top: 80px;
   padding-bottom: 100px;
   background-color: $color-light-l;
+
+  @include phones {
+    padding: 42px 0;
+  }
 }
 
 .pets__container {
@@ -12,6 +16,10 @@
 
 .pets__slider {
   margin-bottom: 62px;
+
+  @include phones {
+    margin-bottom: 42px;
+  }
 }
 
 .pets__list {
