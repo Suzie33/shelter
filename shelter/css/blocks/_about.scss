@@ -1,6 +1,10 @@
 .about {
   padding-top: 80px;
   padding-bottom: 100px;
+
+  @include phones {
+    padding: 42px 0;
+  }
 }
 
 .about__container {
@@ -20,6 +24,10 @@
   @include tablets {
     margin-right: 0;
   }
+
+  @include phones {
+    width: 86.67%;
+  }
 }
 
 .about__content {
@@ -29,10 +37,20 @@
     order: -1;
     margin-bottom: 80px;
   }
+
+  @include phones {
+    width: 90%;
+    margin-bottom: 42px;
+  }
 }
 
 .about__text {
   margin-bottom: 25px;
+
+  @include phones {
+    margin-bottom: 22px;
+    text-align: justify;
+  }
 
   &:last-child {
     margin-bottom: 0;

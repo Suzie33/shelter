@@ -11,6 +11,10 @@
 
   &--about {
     width: 370px;
+
+    @include phones {
+      width: 225px;
+    }
   }
 
   &--pets {
@@ -33,5 +37,12 @@
   &--footer {
     margin-bottom: 0;
     color: $color-light-xl;
+  }
+
+  @include phones {
+    font-size: 25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
