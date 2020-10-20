@@ -20,6 +20,17 @@
   flex-wrap: wrap;
   row-gap: 55px;
   column-gap: 120px;
+
+  @include tablets {
+    width: 89%;
+    column-gap: 60px;
+  }
+}
+
+.help__item {
+  @include tablets {
+    min-width: 170px;
+  }
 }
 
 .help__img {

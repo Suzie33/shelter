@@ -8,15 +8,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include tablets {
+    flex-direction: column;
+  }
 }
 
 .donate__photo {
-  width: 42,1%;
+  width: 42.1%;
   margin-right: 2.5%;
+
+  @include tablets {
+    width: 71.3%;
+    margin-right: 0;
+  }
 }
 
 .donate__content {
-  width: 31.67%;
+  width: 380px;
+
+  @include tablets {
+    order: -1;
+    margin-bottom: 60px;
+  }
 }
 
 .donate__subtitle {
