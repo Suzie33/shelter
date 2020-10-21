@@ -928,6 +928,9 @@ svg {
   padding-top: 80px;
   padding-bottom: 100px;
   background-color: #F6F6F6; }
+  @media screen and (max-width: 768px) {
+    .pets--main {
+      padding-bottom: 76px; } }
   @media screen and (max-width: 480px) {
     .pets {
       padding: 42px 0; } }
@@ -947,9 +950,16 @@ svg {
   margin-bottom: 60px;
   width: 100%;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   column-gap: 40px;
   row-gap: 30px; }
+  @media screen and (max-width: 768px) {
+    .pets__list {
+      max-width: 580px;
+      max-height: 1365px;
+      margin-bottom: 40px;
+      overflow: hidden; } }
 
 .slider {
   width: 100%;
@@ -1027,6 +1037,9 @@ svg {
       .title--pets {
         width: 100%;
         margin-bottom: 42px; } }
+  @media screen and (max-width: 768px) {
+    .title--pets-main {
+      margin-bottom: 30px; } }
   .title--help {
     width: 310px;
     margin-bottom: 60px;

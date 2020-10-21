@@ -28,6 +28,12 @@
     }
   }
 
+  &--pets-main {
+    @include tablets {
+      margin-bottom: 30px;
+    }
+  }
+
   &--help {
     width: 310px;
     margin-bottom: 60px;
