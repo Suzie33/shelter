@@ -1,6 +1,10 @@
 .pagination {
   display: flex;
   column-gap: 20px;
+
+  @include phones {
+    column-gap: 10px;
+  }
 }
 
 .pagination__btn {

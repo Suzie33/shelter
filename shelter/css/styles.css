@@ -688,6 +688,9 @@ svg {
       display: block;
       margin-right: 43px; } }
 
+.hamburger-menu-link__icon {
+  stroke: #292929; }
+
 .header {
   width: 100%;
   padding: 60px 0;
@@ -889,6 +892,9 @@ svg {
 .pagination {
   display: flex;
   column-gap: 20px; }
+  @media screen and (max-width: 480px) {
+    .pagination {
+      column-gap: 10px; } }
 
 .pagination__btn {
   width: 52px;
@@ -1040,6 +1046,9 @@ svg {
   @media screen and (max-width: 768px) {
     .title--pets-main {
       margin-bottom: 30px; } }
+  @media screen and (max-width: 480px) {
+    .title--pets-main {
+      margin-bottom: 42px; } }
   .title--help {
     width: 310px;
     margin-bottom: 60px;
