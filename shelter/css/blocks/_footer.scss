@@ -38,6 +38,10 @@
   @include phones {
     flex-wrap: wrap;
     margin-bottom: 40px;
+
+    @include phones {
+      width: 300px;
+    }
   }
 }
 
@@ -84,6 +88,9 @@
 
   @include phones {
     min-height: 222px;
-
   }
+}
+
+.footer__photo {
+  margin: 0 auto;
 }

@@ -32,6 +32,10 @@
   }
 }
 
+.donate__img {
+  margin: 0 auto;
+}
+
 .donate__content {
   width: 380px;
 
@@ -43,6 +47,9 @@
   @include phones {
     width: 93.34%;
     margin-bottom: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 

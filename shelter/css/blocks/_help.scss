@@ -23,24 +23,24 @@
 
   @include tablets {
     width: 89%;
-    column-gap: 60px;
+    column-gap: 9.5%;
   }
 
   @include phones {
     width: 96.67%;
     row-gap: 30px;
-    column-gap: 30px;
+    column-gap: 10.34%;
     justify-content: start;
   }
 }
 
 .help__item {
   @include tablets {
-    min-width: 170px;
+    min-width: 27%;
   }
 
   @include phones {
-    min-width: 130px;
+    min-width: 44.8%;
   }
 }
 

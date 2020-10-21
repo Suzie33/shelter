@@ -8,5 +8,9 @@
 }
 
 .hamburger-menu-link__icon {
-  stroke: $color-dark-3xl;
+  stroke: $color-primary;
+  
+  &--dark {
+    stroke: $color-dark-3xl;
+  }
 }

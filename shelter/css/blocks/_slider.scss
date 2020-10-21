@@ -31,7 +31,7 @@
   overflow: hidden;
 
   @include tablets {
-    width: 82%;
+    width: 580px;
   }
 
   @include phones {
@@ -42,17 +42,8 @@
 }
 
 .slider__item {
-  width: 27.27%;
-  max-width: 270px;
+  width: 270px;
   flex-shrink: 0;
-
-  @include tablets {
-    width: 46.5%;
-  }
-
-  @include phones {
-    width: 100%;
-  }
 }
 
 .slider__controls {
