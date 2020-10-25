@@ -7,6 +7,9 @@
     & .nav__item:hover {
       color: $color-dark-3xl;
     }
+    & .nav__item--disabled:hover {
+      color: $color-dark-l;
+    }
   }
 
   @include phones {
@@ -33,5 +36,12 @@
     cursor: pointer;
     color: $color-light-s;
     transition: .3s;
+  }
+
+  &--disabled {
+    &:hover {
+      cursor: default;
+      color: $color-dark-s;
+    }
   }
 }

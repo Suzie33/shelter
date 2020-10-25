@@ -829,13 +829,14 @@ svg {
     .hero__left {
       width: 65%;
       margin-right: 0;
-      margin-bottom: 100px; } }
+      margin-bottom: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; } }
   @media screen and (max-width: 767px) {
     .hero__left {
       width: 100%;
       margin-bottom: 105px;
-      display: flex;
-      flex-direction: column;
       align-items: center; } }
 
 .hero__title {
@@ -858,6 +859,11 @@ svg {
     .hero__desc {
       text-align: center; } }
 
+@media screen and (max-width: 1279px) {
+  .hero__btn {
+    margin-left: auto;
+    margin-right: auto; } }
+
 .logo {
   flex-grow: 0; }
 
@@ -876,6 +882,8 @@ svg {
     color: #545454; }
     .nav--dark .nav__item:hover {
       color: #292929; }
+    .nav--dark .nav__item--disabled:hover {
+      color: #545454; }
   @media screen and (max-width: 767px) {
     .nav {
       display: none; } }
@@ -893,6 +901,9 @@ svg {
     cursor: pointer;
     color: #FAFAFA;
     transition: .3s; }
+  .nav__item--disabled:hover {
+    cursor: default;
+    color: #CDCDCD; }
 
 .page-title {
   margin-bottom: 10px;
