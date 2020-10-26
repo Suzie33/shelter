@@ -12,7 +12,7 @@ hamburgerMenuBtn.addEventListener('click', (e) => {
     mainLogo.style.visibility = 'visible';
     document.body.style.overflow = 'visible';
     overlay.style.display = 'none';
-    
+
   } else {
     hamburgerNav.classList.add('nav--hamburger-visible');
     hamburgerMenuBtn.classList.add('hamburger-menu-link--hamburger');
@@ -29,3 +29,27 @@ overlay.addEventListener('click', () => {
 activeMenuElement.addEventListener('click', () => {
   hamburgerMenuBtn.click();
 })
+
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+    items: 3,
+    loop: true,
+    nav: true,
+    slideBy: 3,
+    dots: false,
+    navText : ["",""],
+    responsive:{
+      0:{
+          items:1
+      },
+      768:{
+          items:2
+      },
+      1280:{
+          items:3
+      },
+
+  }
+
+  });
+});
