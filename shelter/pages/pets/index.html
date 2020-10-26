@@ -8,12 +8,13 @@
   <link rel="stylesheet" href="../../css/styles.css">
 </head>
 <body>
-  <div class="wrapper">
+  <div id="overlay" class="overlay"></div>
+  <div id="top" class="wrapper">
     <div class="wrapper__content">
       <header class="header header--white header--thin header--fixed">
         <div class="container header__container">
           <div class="header__left">
-            <a href="../main" class="logo">
+            <a href="../main" id="main-logo" class="logo">
               <h1 class="page-title page-title--dark">Cozy House</h1>
               <div class="logo__text logo__text--dark">Shelter for pets in Boston</div>
             </a>
@@ -35,7 +36,29 @@
                 </li>
               </ul>
             </nav>
-            <a href="#" class="hamburger-menu-link">
+            <div id="nav-hamburger" class="nav--hamburger ">
+              <div class="nav--hamburger__top">
+                <a href="../main" class="logo">
+                  <h1 class="page-title">Cozy House</h1>
+                  <div class="logo__text">Shelter for pets in Boston</div>
+                </a>
+              </div>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="../main" class="nav__link">About the shelter</a>
+                </li>
+                <li class="nav__item nav__item--active">
+                  <a href="#" class="nav__link">Our pets</a>
+                </li>
+                <li class="nav__item nav__item--disabled">
+                  <a class="nav__link">Help the shelter</a>
+                </li>
+                <li class="nav__item nav__item--disabled">
+                  <a class="nav__link">Contacts</a>
+                </li>
+              </ul>
+            </div>
+            <a id="hamburger-menu-link" href="#top" class="hamburger-menu-link">
               <svg class="hamburger-menu-link__icon--dark" width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line y1="21" x2="30" y2="21" stroke-width="2"/>
                 <line y1="11" x2="30" y2="11" stroke-width="2"/>
@@ -46,7 +69,7 @@
         </div>
       </header>
 
-      <main class="main">
+      <main id="main" class="main--padding--top">
         <section class="pets pets--main">
           <div class="container pets__container">
             <h3 class="title title--pets title--pets-main">Our friends who<br> are looking for a house</h3>
@@ -207,4 +230,7 @@
       </div>
     </footer>
   </div>
+
+
+<script src="pets.js"></script>
 </body>

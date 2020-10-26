@@ -336,7 +336,7 @@ body {
     .container {
       width: 93.75%; } }
 
-.main {
+.main--padding--top {
   padding-top: 120px; }
 
 *, ::before, ::after {
@@ -639,8 +639,7 @@ svg {
   padding-bottom: 61px;
   width: 61.67%;
   display: flex;
-  align-items: stretch;
-  z-index: 10; }
+  align-items: stretch; }
   @media screen and (max-width: 1279px) {
     .footer__content {
       padding-bottom: 0;
@@ -714,6 +713,8 @@ svg {
 .hamburger-menu-link--hamburger {
   z-index: 10;
   transform: rotate(90deg); }
+  .hamburger-menu-link--hamburger .hamburger-menu-link__icon--dark {
+    stroke: #F1CDB3; }
 
 .header {
   width: 100%;
@@ -728,9 +729,12 @@ svg {
   .header--fixed {
     position: fixed;
     top: 0; }
+    .header--fixed--static {
+      position: static; }
   @media screen and (max-width: 1279px) {
     .header {
-      padding-top: 30px; } }
+      padding-top: 30px;
+      min-height: 120px; } }
 
 .header__left {
   flex-shrink: 0; }

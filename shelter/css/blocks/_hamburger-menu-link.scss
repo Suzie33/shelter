@@ -15,6 +15,8 @@
   
   &--dark {
     stroke: $color-dark-3xl;
+
+    
   }
 }
 
@@ -22,4 +24,7 @@
   z-index: 10;
   transform: rotate(90deg);
 
+  & .hamburger-menu-link__icon--dark {
+    stroke: $color-primary;
+  }
 }

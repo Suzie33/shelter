@@ -17,10 +17,15 @@
   &--fixed {
     position: fixed;
     top: 0;
+
+    &--static {
+      position: static;
+    }
   }
 
   @include tablets {
     padding-top: 30px;
+    min-height: 120px;
   }
 }
 
