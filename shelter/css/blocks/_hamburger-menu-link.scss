@@ -1,9 +1,12 @@
 .hamburger-menu-link {
   display: none;
+  position: absolute;
+  top: 45px;
+  right: 53px;
+  transition: 1s;
 
   @include phones {
     display: block;
-    margin-right: 43px;
   }
 }
 
@@ -13,4 +16,10 @@
   &--dark {
     stroke: $color-dark-3xl;
   }
+}
+
+.hamburger-menu-link--hamburger {
+  z-index: 10;
+  transform: rotate(90deg);
+
 }

@@ -45,3 +45,52 @@
     }
   }
 }
+
+.nav--hamburger {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: -350px;
+  width: 320px;
+  transition: 1s;
+  overflow: hidden;
+  height: 100vh;
+
+  background-color: $color-dark-3xl;
+
+  & .nav__list {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .nav__item {
+    margin-bottom: 40px;
+    margin-right: 0;
+    font-size: 32px;
+    line-height: 1.6;
+    color: $color-dark-s;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--active {
+      color: $color-light-s;
+    }
+  }
+
+  &-visible {
+    right: 0px;
+  }
+}
+
+.nav--hamburger__top {
+  position: absolute;
+  top: 0;
+  display: flex;
+  padding-top: 30px;
+  padding-left: 10px;
+}
