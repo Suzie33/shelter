@@ -445,6 +445,30 @@ svg {
     .btn {
       color: #292929; } }
 
+.button-arrow__img {
+  fill: #292929; }
+
+.button-arrow {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .button-arrow:hover {
+    background-color: #FDDCC4;
+    border-color: #FDDCC4;
+    transition: .3s; }
+  .button-arrow--disabled {
+    border: 2px solid #CDCDCD;
+    background-color: transparent; }
+    .button-arrow--disabled .button-arrow__img {
+      fill: #CDCDCD; }
+
+.button-arrow__img--right {
+  transform: rotate(180deg); }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -1010,7 +1034,6 @@ svg {
   margin-bottom: 62px; }
   @media screen and (max-width: 767px) {
     .pets__slider {
-      padding-bottom: 52px;
       margin-bottom: 42px; } }
 
 .pets__list {
@@ -1029,7 +1052,6 @@ svg {
       overflow: hidden; } }
 
 .slider {
-  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1040,15 +1062,21 @@ svg {
       flex-wrap: wrap; } }
 
 .slider__list {
-  display: flex; }
+  display: flex;
+  column-gap: 9.09%; }
+  @media screen and (max-width: 1279px) {
+    .slider__list {
+      column-gap: 7%; } }
   @media screen and (max-width: 767px) {
     .slider__list {
       max-width: 270px;
+      overflow: hidden;
       margin: 0 auto; } }
 
 .slider__list-wrap {
-  width: 990px;
-  margin: 0 auto; }
+  width: 82.5%;
+  margin: 0 auto;
+  overflow: hidden; }
   @media screen and (max-width: 1279px) {
     .slider__list-wrap {
       width: 580px; } }
@@ -1060,92 +1088,15 @@ svg {
 
 .slider__item {
   width: 270px;
-  margin-right: 90px;
   flex-shrink: 0; }
-  .slider__item:nth-child(3n) {
-    margin-right: 0; }
-  @media screen and (max-width: 1279px) {
-    .slider__item {
-      margin-right: 40px; }
-      .slider__item:nth-child(2n) {
-        margin-right: 0; } }
 
-.owl-nav {
-  margin-top: 0; }
+@media screen and (max-width: 767px) {
+  .slider__controls--left {
+    margin-left: 43px; } }
 
-.owl-prev {
-  width: 52px;
-  height: 52px;
-  position: absolute;
-  left: -104px;
-  top: 192px;
-  border: 2px solid #F1CDB3 !important;
-  border-radius: 50%;
-  background-image: url("../../assets/images/icons/Arrow.svg") !important;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-  outline: none; }
-  .owl-prev:hover {
-    background-color: #FDDCC4 !important;
-    border-color: #FDDCC4 !important;
-    transition: .3s; }
-  @media screen and (max-width: 1279px) {
-    .owl-prev {
-      left: -75px; } }
-  @media screen and (max-width: 767px) {
-    .owl-prev {
-      top: 455px;
-      left: 27px; } }
-
-.owl-next {
-  width: 52px;
-  height: 52px;
-  position: absolute;
-  right: -106px;
-  top: 192px;
-  border: 2px solid #F1CDB3 !important;
-  border-radius: 50%;
-  background-image: url("../../assets/images/icons/Arrow-right.svg") !important;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-  outline: none; }
-  .owl-next:hover {
-    background-color: #FDDCC4 !important;
-    border-color: #FDDCC4 !important;
-    transition: .3s; }
-  @media screen and (max-width: 1279px) {
-    .owl-next {
-      right: -75px; } }
-  @media screen and (max-width: 767px) {
-    .owl-next {
-      top: 455px;
-      right: 27px; } }
-
-.owl-item {
-  width: 270px !important;
-  margin-right: 90px !important; }
-  .owl-item:nth-child(3n) {
-    margin-right: 0 !important; }
-  @media screen and (max-width: 1279px) {
-    .owl-item {
-      margin-right: 40px !important; }
-      .owl-item:nth-child(3n) {
-        margin-right: 40px !important; }
-      .owl-item:nth-child(odd) {
-        margin-right: 0 !important; } }
-  @media screen and (max-width: 767px) {
-    .owl-item {
-      margin-right: 0 !important; }
-      .owl-item:nth-child(3n) {
-        margin-right: 0px !important; }
-      .owl-item:nth-child(2n) {
-        margin-right: 0px !important; } }
-
-.owl-stage {
-  max-height: 435px; }
-
-.owl-stage-outer {
-  max-height: 435px; }
+@media screen and (max-width: 767px) {
+  .slider__controls--right {
+    margin-right: 43px; } }
 
 .title {
   margin-bottom: 25px;

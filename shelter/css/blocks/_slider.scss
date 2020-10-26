@@ -1,5 +1,4 @@
 .slider {
-  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
@@ -13,16 +12,23 @@
 
 .slider__list {
   display: flex;
+  column-gap: 9.09%;
+
+  @include tablets {
+    column-gap: 7%;
+  }
 
   @include phones {
     max-width: 270px;
+    overflow: hidden;
     margin: 0 auto;
   }
 }
 
 .slider__list-wrap {
-  width: 990px;
+  width: 82.5%;
   margin: 0 auto;
+  overflow: hidden;
 
   @include tablets {
     width: 580px;
@@ -37,137 +43,19 @@
 
 .slider__item {
   width: 270px;
-  margin-right: 90px;
   flex-shrink: 0;
-
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
-
-  @include tablets {
-    margin-right: 40px;
-
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
-  }
 }
 
-// .slider__controls {
-//   &--left {
-//     @include phones {
-//       margin-left: 43px;
-//     }
-//   }
-
-//   &--right {
-//     @include phones {
-//       margin-right: 43px;
-//     }
-//   }
-// }
-
-.owl-nav {
-  margin-top: 0;
-}
-
-.owl-prev {
-  width: 52px;
-  height: 52px;
-  position: absolute;
-  left: -104px;
-  top: 192px;
-  border: 2px solid #F1CDB3 !important;
-  border-radius: 50%;
-  background-image: url('../../assets/images/icons/Arrow.svg') !important;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-  outline: none;
-
-  &:hover {
-
-    background-color: $color-primary-light !important;
-    border-color: $color-primary-light !important;
-    transition: .3s;
-  }
-
-  @include tablets {
-    left: -75px;
-  }
-
-  @include phones {
-    top: 455px;
-    left: 27px;
-  }
-}
-
-.owl-next {
-  width: 52px;
-  height: 52px;
-  position: absolute;
-  right: -106px;
-  top: 192px;
-  border: 2px solid #F1CDB3 !important;
-  border-radius: 50%;
-  background-image: url('../../assets/images/icons/Arrow-right.svg') !important;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-  outline: none;
-
-  &:hover {
-
-    background-color: $color-primary-light !important;
-    border-color: $color-primary-light !important;
-    transition: .3s;
-  }
-
-  @include tablets {
-    right: -75px;
-  }
-
-  @include phones {
-    top: 455px;
-    right: 27px;
-  }
-}
-
-.owl-item {
-  width: 270px !important;
-  margin-right: 90px !important;
-
-  &:nth-child(3n) {
-    margin-right: 0 !important;
-  }
-
-  @include tablets {
-    margin-right: 40px !important;
-
-    &:nth-child(3n) {
-      margin-right: 40px !important;
-    }
-
-    &:nth-child(odd) {
-      margin-right: 0 !important;
+.slider__controls {
+  &--left {
+    @include phones {
+      margin-left: 43px;
     }
   }
 
-  @include phones {
-    margin-right: 0 !important;
-
-    &:nth-child(3n) {
-      margin-right: 0px !important;
-    }
-    &:nth-child(2n) {
-      margin-right: 0px !important;
+  &--right {
+    @include phones {
+      margin-right: 43px;
     }
   }
-
-}
-
-.owl-stage {
-  max-height: 435px;
-}
-
-.owl-stage-outer {
-  max-height: 435px;
 }

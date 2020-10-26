@@ -7,7 +7,6 @@
     "browser-sync": "^2.26.12",
     "gulp": "^4.0.2",
     "gulp-pug": "^4.0.1",
-    "owl.carousel": "^2.3.4",
     "pug": "^3.0.0"
   },
   "devDependencies": {

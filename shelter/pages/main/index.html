@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shelter</title>
 
-  <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
-
   <link rel="stylesheet" href="../../css/styles.css">
 </head>
 <body>
@@ -101,11 +99,13 @@
           <div class="pets__slider slider">
             <div class="slider__controls slider__controls--left">
               <button type="button" class="button-arrow">
-                
+                <svg class="button-arrow__img" width="14" height="6" viewBox="0 0 14 6" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 2V4H3V6L0 3L3 0V2H14Z"/>
+                </svg>
               </button>
             </div>
             <div class="slider__list-wrap">
-              <ul class="slider__list owl-carousel">
+              <ul class="slider__list">
                 <li class="slider__item">
                   <div class="card">
                     <img src="../../assets/images/card1.png" alt="Pet Katrine" class="card__photo">
@@ -133,38 +133,13 @@
                     </div>
                   </div>   
                 </li>
-                <li class="slider__item">
-                  <div class="card">
-                    <img src="../../assets/images/card4.png" alt="Pet Sophia" class="card__photo">
-                    <div class="card__content">
-                      <h4 class="card__title">Sophia</h4>
-                      <a href="#" class ="btn btn--white">Learn more</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="slider__item">
-                  <div class="card">
-                    <img src="../../assets/images/card5.png" alt="Pet Timmy" class="card__photo">
-                    <div class="card__content">
-                      <h4 class="card__title">Timmy</h4>
-                      <a href="#" class ="btn btn--white">Learn more</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="slider__item">
-                  <div class="card">
-                    <img src="../../assets/images/card6.png" alt="Pet Charly" class="card__photo">
-                    <div class="card__content">
-                      <h4 class="card__title">Charly</h4>
-                      <a href="#" class ="btn btn--white">Learn more</a>
-                    </div>
-                  </div>   
-                </li>
               </ul>
             </div>
             <div class="slider__controls slider__controls--right">
               <button type="button" class="button-arrow">
-
+                <svg class="button-arrow__img button-arrow__img--right" width="14" height="6" viewBox="0 0 14 6" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 2V4H3V6L0 3L3 0V2H14Z"/>
+                </svg>
               </button>
             </div>
           </div>
@@ -363,8 +338,6 @@
   </div>
   <div id="overlay" class="overlay"></div>
 
-  <script src="/node_modules/jquery/dist/jquery.js"></script>
-  <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-  <script src="main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
